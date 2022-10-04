@@ -27,24 +27,24 @@ namespace HCL_new.String
 
               }
           }*/
-      
-       /* static void Main(string[] args)
-        {
-            string nm = Console.ReadLine();
-           // string nm = "Shaurya";
-            string s2 = "";
-            //bool b = true;
-           // Console.WriteLine(!b);
-            foreach (char ch in nm)
-            {
-                if (!s2.Contains(ch))
-                {
-                    s2 = s2 + ch;
-                }
 
-            }
-            Console.WriteLine(s2);
-        }*/
+        /* static void Main(string[] args)
+         {
+             string nm = Console.ReadLine();
+            // string nm = "Shaurya";
+             string s2 = "";
+             //bool b = true;
+            // Console.WriteLine(!b);
+             foreach (char ch in nm)
+             {
+                 if (!s2.Contains(ch))
+                 {
+                     s2 = s2 + ch;
+                 }
+
+             }
+             Console.WriteLine(s2);
+         }*/
 
         public void Display(string a)
         {

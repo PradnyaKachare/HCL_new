@@ -36,13 +36,13 @@ namespace HCL_new
             Console.WriteLine(max);
         }
 
-    
-    static void Main(string[] args)
-    {
-           /* int size = int.Parse(Console.ReadLine());
-            int[] arr = new int[size];*/
-            int[] arr = { 1,1,0,1,0,0,1,0,1,0};
+
+        static void Main(string[] args)
+        {
+            /* int size = int.Parse(Console.ReadLine());
+             int[] arr = new int[size];*/
+            int[] arr = { 1, 1, 0, 1, 0, 0, 1, 0, 1, 0 };
 
         }
-}
+    }
 }

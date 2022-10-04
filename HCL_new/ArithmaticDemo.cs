@@ -9,11 +9,11 @@ namespace HCL_new
         static void Main(string[] args)
         {
             //Arithmatic Progression
-          
+
             int a2 = int.Parse(Console.ReadLine());
-            
+
             int a3 = int.Parse(Console.ReadLine());
-            
+
             int n = int.Parse(Console.ReadLine());
             int d = a3 - a2;
 

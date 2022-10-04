@@ -28,7 +28,7 @@ namespace HCL_new
             cucuDemo ck = new cucuDemo();
             int n = Convert.ToInt32(Console.ReadLine());
             int c = 0;
-           
+
             if (n == 1)
             {
                 Console.WriteLine("0");

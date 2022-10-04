@@ -11,15 +11,15 @@ namespace HCL_new.String
             string t = "";
             foreach (char c in s)
             {
-                if(char.IsUpper(c))
+                if (char.IsUpper(c))
                 {
                     t = t + char.ToLower(c);
                 }
-                else if(char.IsLower(c))
+                else if (char.IsLower(c))
                 {
                     t = t + char.ToLower(c);
                 }
-               
+
             }
             return t;
         }

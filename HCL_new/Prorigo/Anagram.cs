@@ -8,31 +8,51 @@ namespace HCL_new.Prorigo
 {
     class Anagram
     {
-            static void Main(string[] args)
+        public static string mutation(string s1, string s2)
+        {
+            char[] a1 = s1.ToLower().ToCharArray();
+            char[] a2 = s2.ToLower().ToCharArray();
+            Array.Sort(a1);
+            Array.Sort(a2);
+
+            string res1 = new string(a1);
+
+            string res2 = new string(a2);
+            string str = "";
+
+            if (res2.Length > res1.Length)
             {
-                string s1 = Console.ReadLine();
-                string s2 = Console.ReadLine();
-
-                if (s1.Length == s2.Length)
-                {
-                    char[] a1 = s1.ToCharArray();
-                    foreach (char ch in a1)
-                    {
-                        //Deepa
-                        int idx = s2.IndexOf('z');
-                        if (idx != -1)
-                        {
-                            s2 = s2.Substring(0, idx) + s2.Substring(idx + 1);
-
-                        }
-                    }
-                    if (s2.Length == 0)
-                        Console.WriteLine("Anagram");
-                    else
-                        Console.WriteLine("Not");
-                }
-                else
-                    Console.WriteLine("Not anagaram");
+                str = res2.Substring(0, res1.Length);
+            }
+            else if (res1.Length > res2.Length)
+            {
+                str = res1.Substring(0, res2.Length);
+            }
+            else if (res1.Length == res2.Length & res1 == res2)
+            {
+                str = res1;
+            }
+            if (res1 == str)
+            {
+                return "Yes";
+            }
+            else
+            {
+                return "No";
             }
         }
+        static void Main(string[] args)
+        {
+            string s1 = Console.ReadLine();
+            string s2 = Console.ReadLine();
+            mutation(s1, s2);
+        }
+    }
 }
+
+
+
+
+
+
+

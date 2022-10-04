@@ -10,16 +10,16 @@ namespace HCL_new.Exception_handlingDemo
     {
         static void Main(string[] args)
         {
-           /* try
-            {
-                int a = int.Parse(Console.ReadLine());
-                int b = int.Parse(Console.ReadLine());
-                Console.WriteLine("Addition:"+(a=b));
-            }
-            catch(FormatException e)   //handler
-            {
+            /* try
+             {
+                 int a = int.Parse(Console.ReadLine());
+                 int b = int.Parse(Console.ReadLine());
+                 Console.WriteLine("Addition:"+(a=b));
+             }
+             catch(FormatException e)   //handler
+             {
 
-            }*/
+             }*/
         }
     }
 }

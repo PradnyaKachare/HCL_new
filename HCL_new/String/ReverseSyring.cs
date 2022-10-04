@@ -18,13 +18,13 @@ namespace HCL_new.String
         static void Main(string[] args)
         {
             string s = "shanaya goes to bishops school";
-            
+
             string[] arr = s.Split(" ");
 
             for (int i = 0; i < arr.Length; i++)
             {
                 string s1 = Reverse(arr[i]);
-                Console.Write( s1 +"  ");
+                Console.Write(s1 + "  ");
             }
 
         }

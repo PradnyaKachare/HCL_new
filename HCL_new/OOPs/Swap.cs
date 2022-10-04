@@ -12,7 +12,7 @@ namespace HCL_new.OOPs
             x = y;
             y = t;
         }
-        static void Calculate(int a,int b,out int sum,out int prod)
+        static void Calculate(int a, int b, out int sum, out int prod)
         {
             sum = a + b;
             prod = a * b;
@@ -22,7 +22,7 @@ namespace HCL_new.OOPs
         {
             int a = 10, b = 20;
             Swapping(ref a, ref b);       //ref addr+ data
-            Console.WriteLine("a="+a+"b"+b);
+            Console.WriteLine("a=" + a + "b" + b);
             int s = 10, p;
             Calculate(3, 4, out s, out p);      //out addr or ref only
             Console.WriteLine(s);

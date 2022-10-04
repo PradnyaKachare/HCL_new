@@ -15,7 +15,7 @@ namespace HCL.Prorigo
             int a3 = int.Parse(Console.ReadLine());
 
             int n = int.Parse(Console.ReadLine());
-            int d = a3 - a2;       
+            int d = a3 - a2;
 
             for (int i = 4; i <= n; i++)
             {

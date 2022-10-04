@@ -8,33 +8,33 @@ namespace HCL_new.Prorigo
 {
     class CoPrime
     {
-            //find the number of coPrime of given number
-            static void Main(string[] args)
+        //find the number of coPrime of given number
+        static void Main(string[] args)
+        {
+            Console.WriteLine("enter the number");
+            int n = int.Parse(Console.ReadLine());
+            int gcd = 0;
+            int c = 0;
+
+            for (int i = 1; i <= n; i++)
             {
-                Console.WriteLine("enter the number");
-                int n = int.Parse(Console.ReadLine());
-                int gcd = 0;                                                                                                                                      
-                int c = 0;
-
-                for (int i = 1; i <= n; i++)
+                for (int j = 1; j <= i; j++)
                 {
-                    for (int j = 1; j <= i; j++)
+                    if (i % j == 0 && n % j == 0)
                     {
-                        if (i % j == 0 && n % j == 0)
-                        {
-                            gcd = j;
-                        }
+                        gcd = j;
                     }
-
-                    if (gcd == 1)
-                    {
-                        c++;
-                    }
-
                 }
-                Console.WriteLine("Number of CoPrime number" + c);
+
+                if (gcd == 1)
+                {
+                    c++;
+                }
 
             }
-        
+            Console.WriteLine("Number of CoPrime number" + c);
+
+        }
+
     }
 }

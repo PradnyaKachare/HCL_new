@@ -17,13 +17,13 @@ namespace HCL.String
             int diff = t3 - t2;
             int t4 = t3;
 
-            for(int i = 4; i < n; i++)
+            for (int i = 4; i < n; i++)
             {
-                t4=t4 + diff;
+                t4 = t4 + diff;
             }
             Console.WriteLine(t4);
         }
-       
+
     }
 
 

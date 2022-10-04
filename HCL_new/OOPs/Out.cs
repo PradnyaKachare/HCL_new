@@ -10,16 +10,16 @@ namespace HCL_new.OOPs
         {
             x = 700;
         }
-        static void Calculate( out int sum)
+        static void Calculate(out int sum)
         {
-            sum = 1000;           
+            sum = 1000;
         }
         static void Main(string[] args)
         {
-            int a = 0, b ;
+            int a = 0, b;
             Swapping(ref a);             //ref addr + data
             Console.WriteLine(a);
-           // int s = 10, p;
+            // int s = 10, p;
             Calculate(out b);      //out addr or ref only
             Console.WriteLine(b);
 

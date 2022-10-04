@@ -25,7 +25,7 @@ namespace HCL_new.String
                     c++;
                 }
             }
-            Console.WriteLine("Vowel="+v +"Consonent="+c);
+            Console.WriteLine("Vowel=" + v + "Consonent=" + c);
 
             for (int i = s1.Length; i < s1.Length - 1; i--)
             {
