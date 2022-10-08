@@ -4,7 +4,24 @@ using System.Text;
 
 namespace HCL_new.CollectionDemo
 {
-    class Book : IComparable<Book>
+    class Book1
+    {
+        static void Main(string[] args)
+        {
+            List<Book> lst = new List<Book>();
+            lst.Add(new Book("Java", 900, "kathay"));
+            lst.Add(new Book("c++", 500, "kanetkar"));
+            lst.Add(new Book("c#", 800, "balguru"));
+            lst.Add(new Book("Python", 1000, "Raj"));
+
+            lst.Sort();
+            foreach (Book b in lst)
+            {
+                Console.WriteLine(b);
+            }
+        }
+
+        class Book : IComparable<Book>
     {
         string bookname;
         int price;
@@ -18,7 +35,6 @@ namespace HCL_new.CollectionDemo
             return this.price.CompareTo(b2.price);
 
             // return b2.price.CompareTo(this.price);
-
 
             /* if (this.price < b2.price)
              return -1;
@@ -47,25 +63,10 @@ namespace HCL_new.CollectionDemo
         }
 
     }
-    class Book1
-    {
-        static void Main(string[] args)
-        {
-            List<Book> lst = new List<Book>();
-            lst.Add(new Book("Java", 900, "kathay"));
-            lst.Add(new Book("c++", 500, "kanetkar"));
-            lst.Add(new Book("c#", 800, "balguru"));
-            lst.Add(new Book("Python", 1000, "Raj"));
-
-            lst.Sort();
-            foreach (Book b in lst)
-            {
-                Console.WriteLine(b);
-            }
-        }
+    
 
     }
-    /* class Array
+     class SortedListArray
      {
          static void Main(string[] args)
          {
@@ -76,7 +77,7 @@ namespace HCL_new.CollectionDemo
                  Console.WriteLine(arr);
              }
 
-           //  Array.Sort(arr);
+            Array.Sort(arr);
 
              foreach (string str in arr)
              {
@@ -84,7 +85,7 @@ namespace HCL_new.CollectionDemo
              }
          }
 
-     }*/
+     }
 
 
 }

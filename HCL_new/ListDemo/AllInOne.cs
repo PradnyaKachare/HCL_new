@@ -40,7 +40,6 @@ namespace HCL_new.CollectionDemo
             //underlying tis arry growable
             List<string> lst = new List<string>();
 
-
             // Console.WriteLine(lst.Count);       //0
             // Console.WriteLine(lst.Capacity);    //4
             lst.Add("Amey");
@@ -58,12 +57,9 @@ namespace HCL_new.CollectionDemo
             lst.Sort();
             foreach (string s in lst)
             {
-                Console.WriteLine(s + "  ");
+                Console.WriteLine( s + "  ");
             }
-
-
-
-
+            Console.WriteLine("index+");
             //Indexes of
             int idx = lst.IndexOf("Pratik");
             int Lastidx = lst.LastIndexOf("Pratik");        //lastindexof
@@ -76,7 +72,7 @@ namespace HCL_new.CollectionDemo
             l2.AddRange(lst);
             l2.Add("D");
 
-            Console.WriteLine(lst[0]);      //list print
+            Console.WriteLine("AddRenge="+lst[0]);      //list print
 
             //Arry print
             int[] arr = { 1, 2, 3, 4 };

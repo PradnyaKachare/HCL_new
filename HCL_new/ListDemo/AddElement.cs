@@ -10,7 +10,7 @@ namespace HCL_new.CollectionDemo
         // C# code to insert an element // into the ArrayList at the// specified index
         //1.	WAP add elements to List<String>,insert at specified position,
         //	update and delete a element.
-        // Driver code
+        
         public static void Main()
         {
             // Creating an ArrayList

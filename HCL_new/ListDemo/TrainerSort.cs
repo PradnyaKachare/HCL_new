@@ -5,6 +5,25 @@ using System.Text;
 
 namespace HCL_new.CollectionDemo
 {
+
+    //WAP to create a  List  using Custom class as any other object as value
+
+    class Trainer
+    {
+        static void Main(string[] args)
+        {
+            List<TrainerSort> lst = new List<TrainerSort>();
+            lst.Add(new TrainerSort(1, "Deepa", 19));
+            lst.Add(new TrainerSort(2, "Kallyani", 15));
+            lst.Add(new TrainerSort(3, "Nisha", 18));
+
+            lst.Sort();
+            foreach (TrainerSort t in lst)
+            {
+                Console.WriteLine(t);
+            }
+        }
+    }
     class TrainerSort : IComparable<TrainerSort>
     {
         int tid;
@@ -40,20 +59,5 @@ namespace HCL_new.CollectionDemo
 
 
     }
-    class Trainer
-    {
-        static void Main(string[] args)
-        {
-            List<TrainerSort> lst = new List<TrainerSort>();
-            lst.Add(new TrainerSort(1, "Deepa", 19));
-            lst.Add(new TrainerSort(2, "Kallyani", 15));
-            lst.Add(new TrainerSort(3, "Nisha", 18));
-
-            lst.Sort();
-            foreach (TrainerSort t in lst)
-            {
-                Console.WriteLine(t);
-            }
-        }
-    }
+   
 }

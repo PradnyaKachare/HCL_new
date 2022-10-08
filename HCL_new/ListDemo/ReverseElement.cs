@@ -4,6 +4,8 @@ using System.Text;
 
 namespace HCL_new.CollectionDemo
 {
+
+    //8.	WAP to print list in reverse order.
     class ReverseElement
     {
         static void Main(string[] args)
@@ -16,7 +18,7 @@ namespace HCL_new.CollectionDemo
             lst.Add("Riya");
             lst.Add("Pratik");
 
-            //Console.WriteLine(lst[0]);  //index wise print element
+          //  Console.WriteLine(lst[0]);  //index wise print element
 
             for (int i = 0; i < lst.Count; i++)
             {

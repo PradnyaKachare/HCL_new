@@ -9,6 +9,8 @@ namespace HCL_new.CollectionDemo
         int rollno;
         string name;
         int percentage;
+
+
         public object this[int index] //annother prg
         {
             get
@@ -25,13 +27,18 @@ namespace HCL_new.CollectionDemo
             set
             {
                 rollno = (int)value;
-                //name = (string)value;                
+                name = (string)value;                
                 percentage = (int)value;
             }
         }
+
         public int Rollno { get => rollno; set => rollno = value; }
         public string Name { get => name; set => name = value; }
         public int Percentage { get => percentage; set => percentage = value; }
+        public int V1 { get; }
+        public string V2 { get; }
+        public int V3 { get; }
+
         public StudentList(string name, int rollno, int percentage)
         {
 
@@ -44,6 +51,14 @@ namespace HCL_new.CollectionDemo
         {
 
         }
+
+        public StudentList(int v1, string v2, int v3)
+        {
+            V1 = v1;
+            V2 = v2;
+            V3 = v3;
+        }
+
         public override string ToString()       //tostring method
         {
             //return base.ToString();
@@ -56,7 +71,15 @@ namespace HCL_new.CollectionDemo
             Console.Write(s1[0]);
             Console.Write(s1[1]);
             Console.WriteLine(s1[2]);
-            s1[0] = 201;                    //set propertyy
+           /* s1[0] = 201;
+            s1[1] = "Jiya";
+            s1[2] = 89;*/
+            //set propertyy
+
+           /* foreach (StudentList student in s1)
+            {
+                Console.WriteLine(student);
+            }*/
         }
     }
 }

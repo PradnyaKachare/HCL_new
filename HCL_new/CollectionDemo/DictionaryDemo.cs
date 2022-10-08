@@ -4,6 +4,8 @@ using System.Text;
 
 namespace HCL_new.String
 {
+    //14.	WAP to create a  Dictionary  using Custom class as any other object as value
+
     class DictionaryDemo
     {
         static void Main(string[] args)
@@ -12,7 +14,7 @@ namespace HCL_new.String
             d.Add("Pratik", 91);
             d.Add("pranesh", 91);       //Duplicate value allow
             d.Add("Pradnya", 92);
-            //  d.Add("Pradnya", 91); //key duplicate not allow
+        //  d.Add("Pradnya", 91);       //key duplicate not allow
 
             Console.WriteLine(d["Pratik"]);
 

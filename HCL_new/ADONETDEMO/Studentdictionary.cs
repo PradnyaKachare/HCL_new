@@ -40,16 +40,24 @@ namespace HCL_new.ADONETDEMO
     {
         static void Main(string[] args)
         {
-            List<Studentdictionary> lst = new List<Studentdictionary>();
-            lst.Add(new Studentdictionary(1, "Veda", 95));
-            lst.Add(new Studentdictionary(2, "Pradnya", 85));
-            lst.Add(new Studentdictionary(3, "Siya", 79));
-            lst.Add(new Studentdictionary(3, "Riya", 90));
-            lst.Add(new Studentdictionary(3, "Shree", 80));
-            lst.Sort();
-            foreach (Studentdictionary st in lst)
+            Studentdictionary s1 = new Studentdictionary(1, "Veda", 91);
+            Studentdictionary s2 = new Studentdictionary(2, "reva", 95); 
+            Studentdictionary s3 = new Studentdictionary(3, "Pradnya", 92);
+            Console.WriteLine(s1.GetHashCode());
+            Console.WriteLine(s2.GetHashCode());
+            Console.WriteLine(s3.GetHashCode());
+
+            Dictionary<Studentdictionary, int> d = new Dictionary<Studentdictionary, int>();
+           /* d.Add (new Studentdictionary(1, "Veda", 91));
+            d.Add(new Studentdictionary(2, "reva", 95 ));
+            d.Add(new Studentdictionary(3, "Pradnya", 92));
+
+*/
+
+
+            foreach (KeyValuePair<Studentdictionary, int> kv in d)
             {
-                Console.WriteLine(st);
+                Console.WriteLine(kv.Key + " " + kv.Value);
             }
         }
     }
