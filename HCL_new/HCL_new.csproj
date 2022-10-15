@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>HCL_new.ListDemo.Sortsal</StartupObject>
+	  <StartupObject>HCL_new.Class</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
