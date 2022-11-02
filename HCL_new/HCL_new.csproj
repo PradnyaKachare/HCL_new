@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>HCL_new.Class</StartupObject>
+	  <StartupObject>HCL_new.ADONETDEMO.DemoInsert</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>

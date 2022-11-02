@@ -19,7 +19,7 @@ namespace HCL_new.CollectionDemo
             lst.Add(new StudentList(5, "raj", 80));
 
 
-           /* do
+            do
             {
                 Console.WriteLine("Enter id,name,percentage");
                 int id = int.Parse(Console.ReadLine());
@@ -35,7 +35,7 @@ namespace HCL_new.CollectionDemo
                     break;
                 }
             }
-            while (true);*/
+            while (true);
 
             foreach (StudentList s in lst)
             {
